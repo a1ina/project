@@ -1,0 +1,226 @@
+/**
+Theme Name: /*name*/
+Author: /*name company*/
+Author URI: /*URL company*/
+Author email: info@wemake.co.il
+Description: /*name*/ theme
+Version: 0.2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: /*name*/
+Tags: /*name*/
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+**/
+
+/** Fonts **/
+@font-face{
+  font-family:Open Sans;
+  src:url(fonts/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face{
+  font-family:Open Sans Light;
+  src:url(fonts/OpenSans-Light.ttf) format('truetype');
+}
+@font-face{
+  font-family:Open Sans Semibold;
+  src:url(fonts/OpenSans-Semibold.ttf) format('truetype');
+}
+@font-face{
+  font-family:FontAwesome;
+  src:url(fonts/fontawesome-webfont.eot);
+  src:url(fonts/fontawesome-webfont.eot) format('embedded-opentype'),
+       url(fonts/fontawesome-webfont.woff2) format('woff2'),
+       url(fonts/fontawesome-webfont.woff) format('woff'),
+       url(fonts/fontawesome-webfont.ttf) format('truetype'),
+       url(fonts/fontawesome-webfont.svg#fontawesomeregular) format('svg');
+  font-weight:400;
+  font-style:normal
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url('fonts/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2') format('woff2'),
+        url('fonts/2fcrYFNaTjcS6g4U3t-Y5ewrjPiaoEww8AihgqWRJAo.woff') format('woff');
+}
+
+/** Normalizer **/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+html, body {
+  color: #777;
+  font-family: Open Sans, Helvetica, sans-serif;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body, div {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 21px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 19px;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #3e3e3e;
+}
+h2, h3, p {
+  margin-bottom: 30px;
+}
+h4, h5, h6 {
+  margin: 30px 0 30px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:focus {
+  outline: none;
+}
+a:visited {
+  
+}
+ul {
+  list-style: none;
+}
+q {
+
+}
+input:focus {
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+hr {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+}
+.material-icons{
+  font-family:'Material Icons';
+  font-weight:400;
+  font-style:normal;
+  font-size:24px;
+  line-height:1;
+  letter-spacing:normal;
+  text-transform:none;
+  display:inline-block;
+  word-wrap:normal;
+  -moz-font-feature-settings:'liga';
+  font-feature-settings:'liga';
+  -webkit-font-feature-settings:'liga';
+  -webkit-font-smoothing:antialiased
+}
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+
+/** Contact Form 7 **/
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+div.wpcf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+}
+div.wpcf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #398f14;
+}
+div.wpcf7-mail-sent-ng {
+	border: 2px solid #ff0000;
+}
+div.wpcf7-spam-blocked {
+	border: 2px solid #ffa500;
+}
+div.wpcf7-validation-errors {
+	border: 2px solid #f7e700;
+}
+.wpcf7-form-control-wrap {
+	position: relative;
+}
+span.wpcf7-not-valid-tip {
+	color: #f00;
+	font-size: 1em;
+	display: block;
+}
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid #ff0000;
+	background: #fff;
+	padding: .2em .8em;
+}
+span.wpcf7-list-item {
+	margin-left: 0.5em;
+}
+.wpcf7-display-none {
+	display: none;
+}
+div.wpcf7 img.ajax-loader {
+	border: none;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+div.wpcf7 div.ajax-error {
+	display: none;
+}
+div.wpcf7 .placeheld {
+	color: #888;
+}
+/** Contact Form 7 END **/
+
+
+
