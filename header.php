@@ -23,4 +23,12 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <header class="header"></header>
+  <header class="header">
+	 <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'name' ); ?>">
+      <?php wp_nav_menu( array(
+          'theme_location' => 'top',
+          'menu_id'        => 'top-menu',
+      ) ); ?>
+      </nav>
+
+	</header>
